@@ -4,10 +4,7 @@ import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
-
 import java.io.IOException;
-import java.util.Arrays;
 
 public class Crawler {
 
@@ -24,7 +21,6 @@ public class Crawler {
     }
 
     public void crawlByElementId(String elementId){
-
         Element elementById = doc.getElementById(elementId);
         if(elementById != null){
             StringBuilder sb = new StringBuilder();
@@ -35,11 +31,7 @@ public class Crawler {
         } else {
             System.out.println("Failure!\nElement by id (\"" + (elementId) + "\") not found.");
         }
-
-
     }
-
-
 
     private void getPath(Element el, StringBuilder sb){
         if(el.parent() == null) return;
@@ -57,8 +49,6 @@ public class Crawler {
         }
         return sb;
     }
-
-
 
 
 }
