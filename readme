@@ -1,0 +1,2 @@
+Usage: java -jar crawler.jar [url] [elementId]
+Example: java -jar crawler.jar https://agileengine.bitbucket.io/beKIvpUlPMtzhfAy/samples/sample-0-origin.html make-everything-ok-button
